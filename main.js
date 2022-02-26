@@ -3,13 +3,13 @@ class StackDataStructure {
     size_of_stack;
 
     constructor() {
-        this.astack = [];
-        this.size = 5;
+        this.a_stack = [];
+        this.size_of_stack = 5;
     }
 
 
     checksize(){
-        console.log(`The current size of the stack = ${this.astack.length}`);
+        console.log(`The current size of the stack = ${this.a_stack.length}`);
     }
 }
 
