@@ -6,19 +6,23 @@ class StackDataStructure {
         this.a_stack = [];
         this.size_of_stack = 5;
 
-
     }
 
     push(num) {
 
-        if (this.a_stack.length < this.size_of_stack) {
-                    
+        if (this.a_stack.length < this.size_of_stack) {         
             this.a_stack[this.a_stack.length] = num;
             console.log(this.a_stack);
         }
         else {
             console.log("Cannot add more than 5 elements");
         }
+    }
+
+    peek(){
+        const lastelement = this.a_stack[this.a_stack.length - 1];
+        console.log("Latest added element = " + lastelement);
+   
     }
 
 
@@ -34,7 +38,6 @@ sds.push(4);
 sds.push(7);
 sds.push(2);
 sds.push(5);
-sds.push(0);
-sds.push(4);
+sds.peek();
 
 
